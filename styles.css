@@ -71,7 +71,7 @@ button {
 .container {
     background-color: var(--clr--white);
     margin: 1.25rem;
-    box-shadow: 0.5rem 1rem 1rem var(--clr--black 0.4); 
+    box-shadow: 0.5rem 1rem 1rem var(--clr--black 0.4);
     border-radius: 0.313rem;
     padding-bottom: 1.25rem;
 
@@ -92,34 +92,38 @@ button {
 }
 
 .container .pricing {
+    padding: 2rem;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1.875rem auto;
-    padding-bottom: 0.625rem;
     background-color: var(--clr--very-pale-blue);
     width: 90%;
     border-radius: 0.313rem;
 
 }
 
-.container .pricing article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 6rem;
+.container .pricing .box {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0;
+    padding : 0;
 }
 
-.container .pricing article img {
-    margin-right: 1rem;
+.container .pricing .box article img {
+    display: flex;
+    margin: 0;
+    padding : 0;
 }
 
-.container .pricing article p.price {
+.container .pricing .box article h2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding : 0;
+}
+
+.container .pricing .box article p {
+    display: flex;
 }
 
 .container .buttons {
@@ -153,7 +157,7 @@ button {
 }
 
 .button-proceed {
-    box-shadow: 0.5rem 1rem 1rem var(--clr--desaturated-blue); 
+    box-shadow: 0.5rem 1rem 1rem var(--clr--desaturated-blue);
     background-color: var(--clr--secondary-color);
     color: var(--clr--white);
     padding: 0.625rem;
