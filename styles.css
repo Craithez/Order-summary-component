@@ -20,6 +20,7 @@
 
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,9 +32,14 @@ img {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Red Hat Display', sans-serif;
     background-color: var(--clr--primary-color);
     text-align: center;
+    min-height: 100vh;
 }
 
 p {
@@ -47,7 +53,9 @@ button {
 }
 
 .bg-image {
-    background-image: url('./images/pattern-background-mobile.svg') no-repeat center/cover;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 25rem;
     position: absolute;
     top: 0;
@@ -57,6 +65,71 @@ button {
     z-index: -1;
 
 }
+
+/* "main" container */
+
+.container {
+    background-color: var(--clr--white);
+    margin: 1.25rem;
+    box-shadow: 0.5rem 1rem 1rem var(--clr--black 0.4); 
+    border-radius: 0.313rem;
+    padding-bottom: 1.25rem;
+
+}
+
+.container img.hero {
+    width: 100%;
+    border-radius: 0.313rem 0.313rem 0 0;
+}
+
+.container h1 {
+    color: var(--clr--dark-blue);
+    margin: 0.625rem 0;
+}
+
+.container p.description {
+    padding: 0 1.875rem;
+}
+
+.container .pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.875rem auto;
+    padding-bottom: 0.625rem;
+    background-color: var(--clr--very-pale-blue);
+    width: 90%;
+    border-radius: 0.313rem;
+
+}
+
+.container .pricing article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6rem;
+}
+
+.container .pricing article img {
+    margin-right: 1rem;
+}
+
+.container .pricing article p.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
 
 .btn {
     cursor: pointer;
@@ -72,6 +145,7 @@ button {
     background-color: transparent;
     color: var(--clr--secondary-color);
     text-decoration: underline;
+    margin-right: 1.25rem;
 }
 
 .button-change:hover {
@@ -79,9 +153,12 @@ button {
 }
 
 .button-proceed {
+    box-shadow: 0.5rem 1rem 1rem var(--clr--desaturated-blue); 
     background-color: var(--clr--secondary-color);
     color: var(--clr--white);
     padding: 0.625rem;
+    margin-bottom: 1.625rem;
+    width: 90%;
 }
 
 .button-proceed:hover {
@@ -91,54 +168,10 @@ button {
 .button-cancel {
     background-color: transparent;
     color: var(--clr--desaturated-blue);
+    margin-bottom: 0.5rem;
 }
 
 .button-cancel:hover {
-    color: var(--clr--dark-blue);
-}
-
-.container {
-    background-color: var(--clr--white);
-    margin: 1.25rem;
-    box-shadow: 0.188rem 0.188rem 0.188rem var(--clr--black);
-    border-radius: 0.313rem;
-    
-}
-
-.container img.hero {
-    width: 100%;
-    border-radius: 0.313rem 0.313rem 0 0;
-}
-
-.container h1 {
-    color: var(--clr--dark-blue);
-    margin: 0.625rem 0;
-}
-
-.container .pricing{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1.875rem auto;
-    padding: 0.625rem;
-    background-color: var(--clr--very-pale-blue);
-    width: 90%;
-    border-radius: 0.313rem;
-
-}
-
-.container .pricing article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .pricing article img {
-    margin-right: 0.625rem;
-}
-
-
-h1 {
     color: var(--clr--dark-blue);
 }
 
@@ -155,7 +188,11 @@ h1 {
 
 @media (min-width: 48rem) {
     .bg-image {
-        background-image: url('./images/pattern-background-desktop.svg')no-repeat center/cover;
+        background-image: url(/images/pattern-background-desktop.svg);
         height: 50vh;
+    }
+
+    .container {
+        width: 31.25rem;
     }
 }
