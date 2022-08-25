@@ -72,14 +72,15 @@ button {
     background-color: var(--clr--white);
     margin: 1.25rem;
     box-shadow: 0.5rem 1rem 1rem var(--clr--black 0.4);
-    border-radius: 0.313rem;
+    border-radius: 0.313rem 0.313rem 0 0;
     padding-bottom: 1.25rem;
+    overflow: hidden;
 
 }
 
 .container img.hero {
     width: 100%;
-    border-radius: 0.313rem 0.313rem 0 0;
+    
 }
 
 .container h1 {
