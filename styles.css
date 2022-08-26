@@ -86,53 +86,39 @@ button {
 .container h1 {
     color: var(--clr--dark-blue);
     margin: 0.625rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .container p.description {
     padding: 0 1.875rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
-.container .pricing {
-    padding: 2rem;
-    margin: auto;
-    display: flex;
+/* Services and pricing */
+
+.container-service {
+    background: var(--clr--very-pale-blue);
+    width: 100%;
+    border-radius: 1.1rem;
+    padding: 1.7rem 1.6rem 1.6rem;
+    display: grid;
+    grid: 1fr / max-content max-content 1fr;
     align-items: center;
-    justify-content: space-between;
-    background-color: var(--clr--very-pale-blue);
-    width: 90%;
-    border-radius: 0.313rem;
+    gap: 2rem;
+  }
 
-}
+  p.selected-plan {
+    color: var(--clr--dark-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
 
-.container .pricing .box {
-    display: inline-flex;
-    justify-content: space-between;
-    margin: 0;
-    padding : 0;
-}
+  p.plan-price{
+    font-weight: 500;
 
-.container .pricing .box article img {
-    display: flex;
-    margin: 0;
-    padding : 0;
-}
-
-.container .pricing .box article h2 {
-    display: flex;
-    margin: 0;
-    padding : 0;
-}
-
-.container .pricing .box article p {
-    display: flex;
-}
-
-.container .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+  }
 
 /* Buttons */
 
@@ -151,6 +137,7 @@ button {
     color: var(--clr--secondary-color);
     text-decoration: underline;
     margin-right: 1.25rem;
+    justify-self: end;
 }
 
 .button-change:hover {
@@ -162,6 +149,7 @@ button {
     background-color: var(--clr--secondary-color);
     color: var(--clr--white);
     padding: 0.625rem;
+    margin-top: 1.625rem;
     margin-bottom: 1.625rem;
     width: 90%;
 }
@@ -201,3 +189,5 @@ button {
         width: 31.25rem;
     }
 }
+
+
