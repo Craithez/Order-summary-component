@@ -20,7 +20,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [Link]([https://github.com/Craithez/Order-summary-component](https://craithez.github.io/Order-summary-component/))
+- Live Site URL: [Link]([https://github.com/Craithez/Order-summary-component](https://craithez.github.io/Order-summary-component/)
 
 
 ### Built with
